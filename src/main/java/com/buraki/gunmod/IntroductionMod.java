@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.buraki.gunmod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
