@@ -12,6 +12,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import java.util.*;
 
 @Mod(IntroductionMod.MOD_ID)
 public class IntroductionMod {
@@ -24,7 +25,7 @@ public class IntroductionMod {
         modEventBus.addListener(this::commonSetup);
 
         //アイテムレジストリをイベントバスに登録
-        IntroductionItems.register(modEventBus)
+        IntroductionItems.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 
