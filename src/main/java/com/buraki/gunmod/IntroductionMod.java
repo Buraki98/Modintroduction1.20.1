@@ -23,6 +23,9 @@ public class IntroductionMod {
 
         modEventBus.addListener(this::commonSetup);
 
+        //アイテムレジストリをイベントバスに登録
+        IntroductionItems.register(modEventBus)
+
         MinecraftForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
