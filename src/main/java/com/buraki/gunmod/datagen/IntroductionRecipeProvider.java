@@ -1,4 +1,4 @@
-package com.buraki.datagen;
+package com.buraki.gunmod.datagen;
 
 public class IntroductionRecipeProvider extends RecipeProvider{
 }
